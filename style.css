@@ -1,6 +1,8 @@
+
 *{
     padding: 0%;
     margin: 0%;
+
 }
 
 nav{
@@ -9,7 +11,7 @@ nav{
     justify-self: anchor-center;
     background-color: #59434454;
     backdrop-filter: blur(3px);
-    top: 8px;
+    top: 3%;
     justify-self: anchor-center;
     border-radius: 20px;
     box-shadow: 0 4px 15px #0000003b;
@@ -27,31 +29,30 @@ nav{
     }
 }
 h1{
-    position: relative;
-    display: inline-block;
-    font-size: 57px;
-    line-height: 67px;
-    font-weight: 700;
-    padding-bottom: 10px;
-    z-index: 10;
-    color: #fff;
-    margin: 0;
-    letter-spacing: 1px;
-    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    font-family: "Caudex", serif;
+    font-family: "Caudex", serif;
     text-align: center;
+    font-size: 500%;
+}
+p{
+   color: #423434;
 }
 .projet{
-    padding: 20px;
+    width: 380px;
     border-radius: 15px;
     box-shadow: 0 2px 20px #0000003b;
-    height: fit-content;
     display: grid;
     align-content: flex-start;
     justify-content: center;
       img{
-      width: 185px;
-      padding-bottom: 3%;
-      border-radius: 20px;
+        width: 100%;
+        aspect-ratio: 7 / 4;
+        object-fit: cover;
+        padding-bottom: 3%;
+        border-radius: 20px 20px 0 0;
+      }
+      div{
+
       }
       /* flex-direction: row;
     align-items: center;
@@ -59,11 +60,17 @@ h1{
     gap: 70%; */
 }
 button{
+    width: 100px;
     padding: 3%;
-    margin-left: 21%;
-    margin-right: 21%;
-    border-radius: 20px;
-    background-color:#c58f90;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 11px;
+    border: none;
+    background-color: #c58f90;
+    box-shadow: 0 2px 20px #0000003b;
+    box-shadow: aquamarine;
+    margin-top: 20px;
+    margin-bottom: 2%;
 }
 .hero{
     background: linear-gradient(#c58f90, #bfc0cf), url(https://vl-media.fr/wp-content/uploads/2023/11/sunrise-4987384_1280-1140x694.jpg);
@@ -77,10 +84,10 @@ button{
     color: white;
 }
 #etu{
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 160%;
     padding: 20px 0 50px;
     font-weight: 300;
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 h3{
     text-align: center;
@@ -90,36 +97,36 @@ h3{
 }
 .apropos{
     display: flex;
-    margin: 0 10%;
-    gap: 10%;
     align-items: center;
+    padding: 64px 24px;
+    .container{
+        display: flex;
+        gap: 32px;
+    }
+p{
+    font-size: 110%;
 }
-#p{
-    width: 50%;
 }
 #apropos{
     padding-top: 2%;
-}
-#competences{
-    padding-top: 5%;
+    text-align: left;
 }
 #projets{
     text-align: center;
-    padding: 64px 24px;
+    padding: 1px 100px;
 }
 .card-wrapper{
     display: flex;
     justify-content: center;
     gap: 80px;
+    margin: 0% 12%;
 }
 .card{
-    width: 180px;
+    width: 30%;
     padding: 20px;
     border-radius: 20px;
     box-shadow: 0 4px 15px #0000003b;
     height: fit-content;
-    display: grid;
-    align-content: flex-start;
     row-gap: 1rem;
     place-self: anchor-center;
 }
@@ -130,6 +137,8 @@ h4{
 }
 .figure{
     padding-top: 4%;
+    text-align: center;
+    font-size: 50px;
 }
 .fa-brands{
 font-size: 25px;
@@ -144,11 +153,13 @@ padding-top: 2%;
     padding-top: 2%;
 }
 .style{
-    padding-left: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
 }
 h2{
     text-align: center;
-    padding-bottom: 30px;
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-weight: weight;
@@ -157,10 +168,69 @@ h2{
     font-weight: 600;
     text-transform: uppercase;
     color: #764a4a;
+    padding: 8%;
 }
 #p-projet{
-    padding-bottom: 3%;
+    font-size: 105%;
+    PADDING-BOTTOM: 5%;
 }
 .h3PROJET{
     padding-bottom: 8%;
+}
+#bougie{
+    width: 180px;
+}
+#came{
+
+}
+#divparcours{
+    display: flex;
+}
+form.card {
+    width:  40%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+
+    .firstRow {
+        display: flex;
+
+        .formGroup {
+            width: 45%;
+        }
+    }
+
+    input, textarea {
+        border: #764a4a 1px solid;
+        padding: 10px;
+        width: 90%;
+    }
+}
+.img{
+    width: 40%;
+    object-fit: cover;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+@media only screen and (max-width: 600px){
+.card-wrapper{
+    flex-direction: column;
+}
+.projet{
+    width: 100%;
+}
+
+}
+footer{
+    background-color: #2d2728;
+
+
+}
+#p{
+    color:white;
 }
