@@ -41,7 +41,6 @@ p{
     width: 380px;
     border-radius: 15px;
     box-shadow: 0 2px 20px #0000003b;
-    display: grid;
     align-content: flex-start;
     justify-content: center;
       img{
@@ -119,7 +118,7 @@ p{
     display: flex;
     justify-content: center;
     gap: 80px;
-    margin: 0% 12%;
+    margin: 0% 9%;
 }
 .card{
     width: 30%;
@@ -129,6 +128,10 @@ p{
     height: fit-content;
     row-gap: 1rem;
     place-self: anchor-center;
+    img{
+        width: 23px;
+        HEIGHT: 37PX;
+    }
 }
 
 h4{
@@ -138,7 +141,6 @@ h4{
 .figure{
     padding-top: 4%;
     text-align: center;
-    font-size: 50px;
 }
 .fa-brands{
 font-size: 25px;
@@ -168,7 +170,7 @@ h2{
     font-weight: 600;
     text-transform: uppercase;
     color: #764a4a;
-    padding: 8%;
+    padding: 6%;
 }
 #p-projet{
     font-size: 105%;
@@ -185,6 +187,8 @@ h2{
 }
 #divparcours{
     display: flex;
+    gap: 7%;
+    text-align: justify;
 }
 form.card {
     width:  40%;
@@ -233,4 +237,10 @@ footer{
 }
 #p{
     color:white;
+}
+.icon{
+    width: 40px;
+}
+#icon{
+    font-size: 40px;
 }
